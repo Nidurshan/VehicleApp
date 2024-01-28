@@ -13,6 +13,15 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IVehiclesRepository, VehiclesRepository>();
 builder.Services.AddScoped<IDocumentsRepository, DocumentRepository>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowEverything",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,7 +31,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors();
+app.UseCors("AllowEverything");
 
 app.UseHttpsRedirection();
 

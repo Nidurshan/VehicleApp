@@ -1,21 +1,30 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header{
-    width: 100%;
-    background-color: rgb(187, 187, 187);
+/* Header.css */
+.nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 90px;
-}
-
-header img{
-    width: 150px;
-    height: 150px;
-    margin-left: -75rem;
+    padding: 10px 60px;
+    background-color: #f1f0f0; /* Change the background color as needed */
+    color: white; /* Change the text color as needed */
+  }
+  
+  .left img {
+    width: 50px; /* Adjust the width of the logo as needed */
+  }
+  
+  .right ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .right li {
+    margin-right: 20px; /* Adjust the margin between the links as needed */
     cursor: pointer;
-}
+    color: #111;
+  }
+  
+  .right li:last-child {
+    margin-right: 0; /* Remove margin for the last link */
+  }
+  

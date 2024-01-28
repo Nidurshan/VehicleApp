@@ -11,13 +11,13 @@
     padding-top: 30px;
 }
 
-.button-container {
+.div-container {
     margin-top: 70px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.vehicle-btn {
+.vehicle {
     display: inline-block;
     margin: 10px;
     padding: 15px;
@@ -31,7 +31,7 @@
     font-size: 20px;
 }
 
-.vehicle-btn:hover {
+.vehicle:hover {
     transform: scale(1.05);
     transition: 0.5s;
 }

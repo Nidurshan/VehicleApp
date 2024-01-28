@@ -5,21 +5,21 @@
 }
 .main-title{
     font-size: 3rem;
-    margin-left: 50px;
+    margin-left: 300px;
     padding-top: 30px;
 }
 .input-container{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    display: flex;
+    flex-direction: column;
     max-width: 300px;
     margin: 20px auto;
 }
 input{
     border: 1px solid black;
-    width: 200px;
-    height: 40px;
-    padding: 8px;
+    width: 300px !important;
+    max-height: 40px !important;
+    padding: 15px !important;
+    margin-bottom: -15px;
     border-radius: 4px;
 }
 .create-btn{
@@ -28,10 +28,9 @@ input{
     border: none;
     width: 130px;
     text-align: center;
-    margin-left: 55rem;
+    margin-left: 44rem;
     padding: 10px;
     position: absolute;
-    /* top: 22%; */
     bottom: 20px;
     color: white;
 }
