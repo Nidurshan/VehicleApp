@@ -1,4 +1,6 @@
-﻿namespace VehicleApp.API.Models
+﻿using System.Data.SqlClient;
+
+namespace VehicleApp.API.Models
 {
     public class Vehicle
     {
